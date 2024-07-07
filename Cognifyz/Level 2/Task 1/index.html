@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Responsive Layout</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation Menu using Bulma -->
+    <nav class="navbar is-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#home">Home</a>
+                <a class="navbar-item" href="#features">Features</a>
+                <a class="navbar-item" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <section id="home" class="mb-5">
+            <h1 class="title">Welcome to the Combined Responsive Layout</h1>
+            <p class="subtitle">This webpage demonstrates various interactive features implemented using HTML, CSS, and JavaScript, along with responsive design using Bulma and Bootstrap.</p>
+        </section>
+
+        <section id="features" class="mb-5">
+            <h2 class="title">Interactive Features</h2>
+
+            <!-- Button Color Change using Bulma -->
+            <div class="box mb-5">
+                <h3 class="title is-4">Button Color Change</h3>
+                <button id="colorButton" class="button is-primary">Click me to change color</button>
+            </div>
+
+            <!-- Greeting Alert using Bulma -->
+            <div class="box mb-5">
+                <h3 class="title is-4">Greeting Alert</h3>
+                <button id="greetButton" class="button is-link">Click me for a greeting</button>
+            </div>
+
+            <!-- Basic Calculator using Bulma -->
+            <div class="box mb-5">
+                <h3 class="title is-4">Basic Calculator</h3>
+                <div class="field">
+                    <div class="control">
+                        <input type="number" id="number1" class="input" placeholder="Enter first number">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <input type="number" id="number2" class="input" placeholder="Enter second number">
+                    </div>
+                </div>
+                <button id="calculateButton" class="button is-success">Calculate</button>
+                <div id="result" class="mt-3"></div>
+            </div>
+        </section>
+
+        <section id="card" class="mb-5">
+            <h2 class="title">Responsive Card Component using Bulma</h2>
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="photo1.avif" alt="Placeholder image">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">Card Title</p>
+                            <p class="subtitle is-6">@username</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grid" class="mb-5">
+            <h2 class="title">Responsive Grid Layout using Bootstrap</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="photo2.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">This is a card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="photo3.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">This is a card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="photo4.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">This is a card with supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

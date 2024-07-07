@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Features Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section id="home">
+            <h1>Welcome to the Combined Features Page</h1>
+            <p>This webpage demonstrates various interactive features implemented using HTML, CSS, and JavaScript.</p>
+            <img src="photo1.jpeg" alt="Placeholder Image">
+        </section>
+
+        <section id="features">
+            <h2>Interactive Features</h2>
+
+            <!-- Button Color Change -->
+            <div class="feature">
+                <h3>Button Color Change</h3>
+                <button id="colorButton">Click me to change color</button>
+            </div>
+
+            <!-- Greeting Alert -->
+            <div class="feature">
+                <h3>Greeting Alert</h3>
+                <button id="greetButton">Click me for a greeting</button>
+            </div>
+
+            <!-- Basic Calculator -->
+            <div class="feature">
+                <h3>Basic Calculator</h3>
+                <div class="calculator">
+                    <input type="number" id="number1" placeholder="Enter first number">
+                    <input type="number" id="number2" placeholder="Enter second number">
+                    <button id="calculateButton">Calculate</button>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

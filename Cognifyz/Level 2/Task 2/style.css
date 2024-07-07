@@ -1,0 +1,77 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+/* Navigation Menu styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-toggle {
+  display: none; /* Initially hidden on larger screens */
+  cursor: pointer;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+      display: none; /* Hide menu items by default on smaller screens */
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+  }
+
+  .navbar-menu.active {
+      display: flex; /* Show menu items when active */
+  }
+
+  .navbar-menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .navbar-toggle {
+      display: block; /* Show hamburger menu icon on smaller screens */
+  }
+}
